@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.center-text {
+      text-align: center;
+    }
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="picture/meun.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>KITTISAK WIPRAD</b></h4>
+    <p class="w3-text-grey">Template by W3.CSS</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="java.html" onclick="java.html()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>java</a>
+    <a href="api.html" onclick="api.html()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>api</a>
+    <a href="profiel.html" onclick="profiel.html()"
+    class="w3-bar-item w3-button w3-padding"><i
+      class="fa fa-envelope fa-fw w3-margin-right"></i>profile</a>
+  </div>
+  </div>
+  <div class="w3-panel w3-large">
+    <a class="fa fa-facebook-official w3-hover-opacity"  href="https://www.facebook.com/kittisak.wiprad/"></a>
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/kxttxsxkm/"></a>
+    <a class="fa fa-github w3-hover-black" href="https://github.com/meun0011" ></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="picture//w3images/picture/vatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+  
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="picture/avatar_g.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <br>
+      <div class="box" style="margin-top: 5%;">
+        <hr>
+        <h2>Click to change</h2>
+        <p id="demo2">Hi</p>
+        <button onclick="myFunction1() ">Click me</button>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img id="dogImage" width="400" height="300" src="" alt="Random Dog" style="display:none;">
+      <div class="w3-container w3-white">
+        <h1>API</h1>
+        <hr>
+        <hr>
+        <h1>Random Dog Image</h1>
+        <button onclick="fetchRandomDog()">Get Random Dog</button>
+       
+        </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="picture/it.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <br>
+      <div class="w3-container w3-white">
+        <br>
+        <input id="id1" type="number" min="100" max="300" required>
+        <button onclick="myFunction()">OK</button>
+        
+        <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+        
+        <p id="demo"></p>
+        <hr>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="picture/go.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p>Count numbers: <output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button> 
+        <button onclick="stopWorker()">Stop Worker</button>
+      </div>
+    </div>
+ 
+  </div>
+  
+
+  <hr>
+  <div class=" mx-auto ">
+  <h1 class="w3-center">cryptos</h1>
+<div class="w3-center" id="lastUpdateTime"></div>
+<div  id="prices"></div></div>
+<hr>
+  <form method="post" action="https://script.google.com/macros/s/AKfycbx2ARw_2Nky9h9SsdG1pYd2ho47aCRHo48T-833vOo0Bxurm131ECfVORM8KkbPAG84/exec" target="_blank">
+    
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <div class="w3-section">
+        <label>tel</label>
+        <input class="w3-input w3-border" type="text" name="tel" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right" `target="_blank"`></i>Send Message </button>
+    </form>
+<hr>
+    
+      <iframe width="100%" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSF-jhcoiq1FTvDuLFrT4ULrv4NiNz88t-E5KEG4NVH-UKUNKRzbUuhsDLr7sIaa7kogqUCkblWwKQu/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe><hr>
+      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.6912736138597!2d103.26980358891787!3d16.2007614116002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3122a6ae121c1c2f%3A0x626cae9fcd86bf3d!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lij4Liy4LiK4Lig4Lix4LiP4Lih4Lir4Liy4Liq4Liy4Lij4LiE4Liy4Lih!5e0!3m2!1sth!2sth!4v1701844095448!5m2!1sth!2sth" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        width="600" height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><hr>
+  <!-- Images of Me -->
+
+  <!-- chart-->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button> 
+    <button onclick="stopWorker()">Stop Worker</button>
+    
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="picture/p3.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="picture/p3.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<script>
+  //document.getElementById("demo ").innerHTML = "Hello World ";
+
+
+  function myFunction1() {
+      fetch("https://catfact.ninja/fact")
+          .then(function(response) {
+              return response.json()
+          })
+          .then(function(data) {
+              let txt = " ";
+              for (let x in data) {
+                  txt += data[x] + " ";
+                  document.getElementById("demo2").innerHTML = txt;
+              };
+
+              return data;
+          })
+
+
+  }
+ 
+      function fetchRandomDog() {
+                // Fetch data from the API
+                fetch('https://random.dog/woof.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const url = data.url;
+    
+                        // Update the image source with the fetched URL
+                        document.getElementById('dogImage').src = url;
+    
+                        // Display the image
+                        document.getElementById('dogImage').style.display = 'block';
+                    })
+                    .catch(error => {
+                        console.error('Error fetching random dog:', error);
+                    });
+            }
+          catfact.ninja
+          
+          function displayPrices(data) {
+      var pricesDiv = document.getElementById('prices');
+      var rates = data.data.rates;
+
+      var currencies = ['1INCH', 'AAVE', 'ABT', 'ACH', 'ACS', 'ADA', 'AED', 'BTC', 'ETH'];
+      var pricesHtml = '<p > 1 USDT can buy:</p>';
+
+      currencies.forEach(currency => {
+          if (rates[currency]) {
+              pricesHtml += `<li>${currency}: ${rates[currency]}</li>`;
+          } else {
+              pricesHtml += `<li>${currency}: N/A</li>`;
+          }
+      });
+
+      pricesHtml += '</ul>';
+      pricesDiv.innerHTML = pricesHtml;
+  }
+          
+          </script>
+      
+
+          </script>
+          <script>
+            function fetchPrices() {
+                var now = new Date();
+                var currentTime = now.toLocaleTimeString();
+          
+                fetch('https://api.coinbase.com/v2/exchange-rates?currency=USDT')
+                    .then(response => response.json())
+                    .then(data => {
+                        displayPrices(data);
+                        displayLastUpdateTime(currentTime);
+                    })
+                    .catch(error => {
+                        console.error('Error fetching data:', error);
+                        alert('Error fetching data. Please try again.');
+                    });
+            }
+            function displayPrices(data) {
+                var pricesDiv = document.getElementById('prices');
+                var rates = data.data.rates;
+          
+                var currencies = ['1INCH', 'AAVE', 'ABT', 'ACH', 'ACS', 'ADA', 'AED', 'BTC', 'ETH'];
+                var pricesHtml = '<p>1 USDT can buy:</p><ul>';
+          
+                currencies.forEach(currency => {
+                    if (rates[currency]) {
+                        pricesHtml += `<li>${currency}: ${rates[currency]}</li>`;
+                    } else {
+                        pricesHtml += `<li>${currency}: N/A</li>`;
+                    }
+                });
+          
+                pricesHtml += '</ul>';
+                pricesDiv.innerHTML = pricesHtml;
+            }
+          
+            function displayLastUpdateTime(currentTime) {
+                var updateTimeDiv = document.getElementById('lastUpdateTime');
+                updateTimeDiv.innerHTML = `<p>Last Update Time: ${currentTime}</p>`;
+            }
+          
+            fetchPrices();
+          
+            setInterval(fetchPrices, 1000);
+          </script>
+          <!-- Apirunnumber -->
+          <script>
+            let w;
+
+function startWorker() {
+  if(typeof(w) == "undefined") {
+    w = new Worker("demo_workers.js");
+  }
+  w.onmessage = function(event) {
+    document.getElementById("result").innerHTML = event.data;
+  };
+}
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+}
+
+function myFunction() {
+  const inpObj = document.getElementById("id1");
+  if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  } else {
+    document.getElementById("demo").innerHTML = "Input OK";
+  } 
+} 
+          </script>
+</body>
+</html>

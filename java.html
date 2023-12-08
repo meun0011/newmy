@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="javacss.css" />
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left"
+      style="z-index:3;width:300px;" id="mySidebar"><br>
+      <div class="w3-container">
+        <a href="#" onclick="w3_close()"
+          class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+          title="close menu">
+          <i class="fa fa-remove"></i>
+        </a>
+        <img src="picture/meun.jpg" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>KITTISAK WIPRAD </b></h4>
+        <p class="w3-text-grey">Template by W3.CSS</p>
+      </div>
+      <div class="w3-bar-block">
+        <a href="index.html" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+            class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding"><i
+            class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+        <a href="#contact" onclick="w3_close()"
+          class="w3-bar-item w3-button w3-padding"><i
+            class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        <a href="java.html" onclick="java.html()"
+          class="w3-bar-item w3-button w3-padding"><i
+            class="fa fa-envelope fa-fw w3-margin-right"></i>java</a>
+        <a href="api.html" onclick="api.html()"
+          class="w3-bar-item w3-button w3-padding"><i
+            class="fa fa-envelope fa-fw w3-margin-right"></i>api</a>
+            <a href="profiel.html" onclick="profiel.html()"
+            class="w3-bar-item w3-button w3-padding"><i
+              class="fa fa-envelope fa-fw w3-margin-right"></i>profile</a> </div>
+    </div>
+    <div class="w3-panel w3-large">
+      <div class="w3-panel w3-large">
+        <a class="fa fa-facebook-official w3-hover-opacity"  href="https://www.facebook.com/kittisak.wiprad/"></a>
+        <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/kxttxsxkm/"></a>
+        <a class="fa fa-github w3-hover-black" href="https://github.com/meun0011" ></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()"
+    style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="#"><img src="picture//w3images/picture/vatar_g2.jpg"
+          style="width:65px;"
+          class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"
+        onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1><b>My Portfolio</b></h1>
+     
+      </div>
+    </header>
+
+
+  <hr ><div class="boxone">
+  <h1 >APi</h1>
+   </div>
+      <div class="box">
+        <h2>Accumulator</h2>
+        <input type="text" id="inputValue" placeholder="Enter value">
+<button onclick="handleReadClick()">Read Value</button>
+
+<div id="result"></div><hr>
+         <div class="w3-content w3-padding-64 w3-margin-top" style="max-width:1564px">
+
+           
+
+            <!-- <div class="box"> -->
+                <h2>Circumference</h2>
+                <input id="input" type="text" placeholder="รัศมี" fdprocessedid="1pjfaa">
+                <button onclick="calculateAndDisplayCircumference()" fdprocessedid="kjvwr">result</button>
+                <h4><span id="result"></span></h4><hr>
+            <!-- </div> -->
+    
+
+            <!-- <div class="box"> -->
+              <h2>Temperature</h2>
+              <input type="number" id="fahrenheit" placeholder="ป้อนอุณหภูมิ" fdprocessedid="a2b9c9">
+              <button type="button" onclick="convert()" fdprocessedid="t6ldndj">result</button>
+              <p id="celsius"></p><hr>
+          <!-- </div> -->
+    
+            <!-- <div class="box"> -->
+                <h2>Find days per minute</h2>
+                <input type="text" id="daysInput" placeholder="วัน" fdprocessedid="1mel0p">
+                <h4><span id="show2"></span></h4>
+                <button onclick="dayToSeconds()" fdprocessedid="lky1nr">result</button><hr>
+            <!-- </div> -->
+            
+    
+            <!-- <div class="box"> -->
+              <h2>Diagonal Rectangle</h2>
+              <input id="base" type="text" placeholder="ป้อนความยาวของฐาน" fdprocessedid="t9a8nn">
+              <input id="height" type="text" placeholder="ป้อนความสูง" fdprocessedid="k08nk7i">
+              <h4><span id="show7"></span></h4>
+              <button onclick="calculateHypotenuse(document.getElementById('base').value, document.getElementById('height').value)" fdprocessedid="60km4k">
+                result</button><hr>
+
+         
+          
+
+          <iframe width="600 auto" height="400 auto" seamless="" frameborder="0" scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSF-jhcoiq1FTvDuLFrT4ULrv4NiNz88t-E5KEG4NVH-UKUNKRzbUuhsDLr7sIaa7kogqUCkblWwKQu/pubchart?oid=423017222&format=interactive">
+        </iframe>
+        <br>
+        <div class="w3-content">
+          <canvas  id="myChart" width="100% " height="200px"  frameborder="0" scrolling="no"></canvas>
+          </div>
+          <div ><script  src="country-by-population.json"></script>
+          </div>
+        
+            <!-- Footer -->
+  
+  
+  
+            <!-- End page content -->
+         
+      </div> 
+      <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+ function printAlphabets(){
+  function myFunction(){
+    document.getElementById("demo").innerHTML("Hello, world!");
+    console.log(alphabet);
+  }
+ }
+
+
+  function fahrenheitToCelsius() {
+            let inputFahrenheit = prompt("Enter temperature in Fahrenheit:");
+            let celsiusValue = (parseFloat(inputFahrenheit) - 32) * (5 / 9);
+            document.getElementById(
+                "show1"
+            ).innerText = `Fahrenheit: ${inputFahrenheit}°F, Celsius: ${celsiusValue.toFixed(
+          2
+        )}°C`;
+        }
+        // หาความยาวเส่นทแยงมุมของสี่เหลี่ยงผืนผ้า
+        function calculateHypotenuse(base, height) {
+                let result = Math.sqrt(base ** 2 + height ** 2);
+                document.getElementById("show7").innerHTML = result.toFixed(3);
+            }
+
+            function printAlphabets() {
+                for (let charCode = 65; charCode <= 90; charCode++) {
+                    const alphabet = String.fromCharCode(charCode);
+                    setTimeout(() => {
+                        console.log(alphabet);
+                    }, (charCode - 65) * 1000);
+                }
+            }
+    
+            function printAlphabets() {
+                let result = '';
+                for (let charCode = 65; charCode <= 90; charCode++) {
+                    const alphabet = String.fromCharCode(charCode);
+                    setTimeout(() => {
+                        result = alphabet;
+                        document.getElementById('show3').innerText = result;
+                    }, (charCode - 65) * 1000);
+                }
+            }
+    
+            printAlphabets();
+    
+            function dayToSeconds() {
+                let inputDays = document.getElementById("daysInput").value;
+                if (!isNaN(inputDays)) {
+                    let seconds = inputDays * 86400;
+                    document.getElementById(
+                        "show2"
+                    ).innerText = `จำนวนวัน ${inputDays} วัน: ${seconds} นาที`;
+                } else {
+                    alert("Please enter a valid number of days.");
+                }
+            }
+            
+        
+
+
+            
+    
+            // หาความยาวเส่นรอบวง
+            function calculateCircleCircumference(radius) {
+                return 2 * Math.PI * radius;
+            }
+    
+            function calculateAndDisplayCircumference() {
+                let inputElement = document.getElementById("input");
+                let resultElement = document.getElementById("result");
+    
+                let radius = parseFloat(inputElement.value);
+    
+                if (!isNaN(radius)) {
+                    let circumference = calculateCircleCircumference(radius);
+                    resultElement.textContent = circumference.toFixed(2);
+                } else {
+                    resultElement.textContent = "กรุณากรอกค่าที่ถูกต้อง";
+                }
+            }
+    
+            
+            function convert() {
+            const fahrenheit = document.getElementById("fahrenheit").value;
+            const celsius = (fahrenheit - 32) / 1.8;
+            document.getElementById("celsius").innerHTML = celsius;
+        }
+
+    
+            // หาความยาวเส่นทแยงมุมของสี่เหลี่ยงผืนผ้า
+            function calculateHypotenuse(base, height) {
+                let result = Math.sqrt(base ** 2 + height ** 2);
+                document.getElementById("show7").innerHTML = result.toFixed(3);
+            }
+            function fahrenheitToCelsius() {
+            let inputFahrenheit = prompt("Enter temperature in Fahrenheit:");
+            let celsiusValue = (parseFloat(inputFahrenheit) - 32) * (5 / 9);
+            document.getElementById(
+                "show1"
+            ).innerText = `Fahrenheit: ${inputFahrenheit}°F, Celsius: ${celsiusValue.toFixed(
+          2
+        )}°C`;
+        }
+
+   
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  
+const ctx = document.getElementById('myChart');
+fetch('country-by-population.json') // ตั้งชื่อไฟล์ JSON ของคุณตรงนี้
+.then(response => response.json())
+.then(data => createPieChart(data))
+.catch(error => console.error('Error:', error));
+
+function createPieChart(data) {
+const countries = data.map(entry => entry.country);
+const populations = data.map(entry => entry.population);
+
+new Chart(ctx, {
+type: 'bar',
+data: {
+labels: countries,
+datasets: [{
+data: populations,
+backgroundColor: [
+'rgba(255, 99, 132, 0.2)',
+'rgba(255, 159, 64, 0.2)',
+'rgba(255, 205, 86, 0.2)',
+'rgba(75, 192, 192, 0.2)',
+'rgba(54, 162, 235, 0.2)',
+// เพิ่มสีตามจำนวนประชากรที่มี
+],
+borderColor: [
+'rgb(255, 99, 132)',
+'rgb(255, 159, 64)',
+'rgb(255, 205, 86)',
+'rgb(75, 192, 192)',
+'rgb(54, 162, 235)',
+// เพิ่มสีตามจำนวนประชากรที่มี
+],
+borderWidth: 1
+}]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false
+}
+});
+}
+      
+function Accumulator(stringValue) {
+            this.currentValue = parseInt(stringValue);
+            this.read = function () {
+                let input = parseFloat(document.getElementById('inputValue').value);
+                this.currentValue += input;
+                this.show();
+            }
+            this.show = function () {
+                document.getElementById('result').innerText = `Current value is ${this.currentValue}`;
+            };
+        }
+
+        let accumulator;
+
+        function handleReadClick() {
+            if (!accumulator) {
+                accumulator = new Accumulator(document.getElementById('inputValue').value);
+            } else {
+                accumulator.read();
+            }
+        }
+
+        function handleShowClick() {
+            if (accumulator) {
+                accumulator.show();
+            } else {
+                document.getElementById('result').innerText = 'Please enter initial value first.';
+            }
+        }
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</body>
+</html>

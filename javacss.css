@@ -1,0 +1,78 @@
+body {
+    background-image: linear-gradient(
+        180deg,
+        #f4f0f0 5%,
+        #7f797970 20%,
+        rgba(120, 112, 112, 0.439) 100%
+      ),
+      url(picture/mmr.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Chakra Petch', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        
+      }
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif
+}
+
+
+  
+  body {
+      background-color: #edeef2;
+      font-family: "Chakra Petch", sans-serif;
+      font-family: "Raleway", sans-serif;
+  }
+  .boxone{
+    text-align: center;
+  }
+  .box {
+      padding: 20px;
+      text-align: center;
+      width: 70%;
+      margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      background-color: #e3ebed80;
+  }
+  
+  input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+  }
+  
+  button {
+      background-color: #00ff08;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+      background-color: #b32d00;
+  }
+  
+  #show {
+      color: #7ca824;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  span {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .myChart{
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+      .box {
+          width: 100%;
+      }
+  }

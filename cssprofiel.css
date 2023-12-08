@@ -1,0 +1,61 @@
+body {
+    background-image: linear-gradient(
+        180deg,
+        #f4f0f0 5%,
+        #7f797970 20%,
+        rgba(120, 112, 112, 0.439) 100%
+      ),
+      url(picture/mmr.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Chakra Petch', sans-serif;
+        font-family: 'Raleway', sans-serif;
+    
+  }
+    
+    .hero {
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+        & .col-md-6 {
+            text-align: center;
+        }
+        & h1 {
+            font-size: 3rem;
+        }
+        & img {
+            shape-image-threshold: 1px;
+            border-radius: 25% 25%;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+    }
+    
+    
+    #section3 {
+        height: 10vh;
+    }
+    
+    @media (max-width: 768px) {
+        img {
+            margin-top: 30px;
+            width: 100%;
+           
+        }
+    }
+    
+    .navbar {
+        transition: background-color 0.3s ease;
+    }
+    
+    
+    
+    .navbar-white .navbar-toggler-icon {
+        background-color: #faf9f9;
+        /* ตั้งค่าสีตัว hamburger icon */
+    }
+    
+    .navbar-white .navbar-nav .nav-link {
+        color: #000 !important;
+    }
+    
